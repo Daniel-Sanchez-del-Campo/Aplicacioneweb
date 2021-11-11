@@ -1,0 +1,240 @@
+* {
+        margin:0px;
+        padding:0px;
+      }
+      
+      #header {
+        margin:auto;
+        width:500px;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      
+      ul, ol {
+        list-style:none;
+      }
+      
+      .nav > li {
+        float:left;
+      }
+      
+      .nav li a {
+        background-color:papayawhip;
+        color:black;
+        text-decoration:none;
+        padding:10px 12px;
+        display:block;
+        box-shadow:5px 5px 2.5px lightcoral;
+      }
+      
+      .nav li a:hover {
+        background-color:lightcoral;
+      }
+      
+      .nav li ul {
+        display:none;
+        position:absolute;
+        min-width:140px;
+      }
+      
+      .nav li:hover > ul {
+        display:block;
+      }
+      
+      .nav li ul li {
+        position:relative;
+      }
+      
+      .nav li ul li ul {
+        right:-140px;
+        top:0px;
+      }
+
+
+
+/ On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+body{
+	background-image: url(https://img.fotocommunity.com/la-alberca-salamanca-spain-4073f943-185c-4770-a2c5-c5252ce4687d.jpg?height=1080);
+	 background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+h1{
+	background-color: papayawhip;
+	box-shadow: 5px 5px 2.5px lightcoral;
+}
+h2{
+	background-color: rgba(202, 144, 214, 0.5);
+  color: whitesmoke;
+	border: 3px lightcoral;
+}
+
+.contact_form{
+	box-shadow: 10px 10px 5px lightcoral;
+	width: 480px;
+	height: auto;
+	margin: 80px auto;
+	border-radius: 10px;
+	padding-top:30px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	background-image: url(https://www.androidsis.com/wp-content/uploads/2009/06/fondos-de-pantalla-de-paisajes-6.jpg);
+}
+textarea{
+	background-image: linear-gradient(to left, lightgreen , lightgrey); color: black;
+	height: 40px;
+	width: 408px;
+	border-radius: 5px;
+	border-style: solid;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+textarea:focus{
+	background-color: lightgrey;
+	outline: 0;
+	border: 3px solid black;
+}
+
+input:focus{
+	background-color: lightgrey;
+	outline: 0;
+	border: 3px solid black;
+}
+button{
+	opacity: 1%;
+}
+.foto1{
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  position: left;
+  width: 390px;
+  height: 200px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Plaza_Mayor_de_La_Alberca_%28Salamanca%29.JPG/270px-Plaza_Mayor_de_La_Alberca_%28Salamanca%29.JPG);
+  font-family: 'Monaco';
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 390px;
+  height: 200px;
+  background: white;
+  border-radius: 45px;
+  font-family: 'Monaco';
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+  boton opacity: 1%;
+}
+
+.botones:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+.botones:hover::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 390px;
+  height: 200px;
+  background: #FDA8CF;
+  
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.botones:hover:after {
+  background: #F3CE5E;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+}
+
