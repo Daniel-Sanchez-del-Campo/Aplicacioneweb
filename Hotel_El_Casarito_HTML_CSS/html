@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA.Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./El Casarito.css" >
+  <title>El mejor lugar de vacaciones El Casarito</title>
+</head>
+<body>
+<header>
+<h1>Tu lugar de vacaciones ideal, El Casarito</h1>
+<body>
+    <div id="header">
+      <ul class="nav">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Lugares que ver</a>
+          <ul>
+            <li><a href="">Submenu1</a></li>
+            <li><a href="">Submenu2</a></li>
+            <li><a href="">Submenu3</a></li>
+            <li><a href="">Submenu4</a>
+              <ul>
+                <li><a href="">Submenu1</a></li>
+                <li><a href="">Submenu2</a></li>
+                <li><a href="">Submenu3</a></li>
+                <li><a href="">Submenu4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">Acerca de</a>
+          <ul>
+            <li><a href="">Submenu1</a></li>
+            <li><a href="">Submenu2</a></li>
+            <li><a href="">Submenu3</a></li>
+            <li><a href="">Submenu4</a></li>
+          </ul>
+        </li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </div>
+</header>
+   <div class="botones">
+            <div class="foto1">
+                <button></button>
+            </div>
+        </div>
+<h2>La Alberca, municipio de la provincia de Salamanca e integrado dentro de la Sierra de Francia, Reserva de la Biósfera de la UNESCO .
+
+Pueblo que ha sabido conservar su arquitectura y tradiciones y declarado Conjunto Histórico Artístico en 1940.
+
+Uno de los pueblos más turísticos de la provincia de Salamanca. Con calles empedradas y casas blancas con entramado de madera y adornadas con multitud de flores de colores .que junto con la plaza mayor, la iglesia de Nuestra Señora de la Asunción hacen de éste pueblo uno de los más bonitos de España.
+</br></br>
+Un pueblo para no perdérselo.</h2>
+
+  <div class="contact_form">
+    <h3>Formulario de registro:</h3>
+    <form action="" method="">
+      <p>
+        <label class="colocar_nombre"><b>Nombre:</b></label>
+        <input type="text" required="obligatorio" placeholder="Escribe tu nombre"></input>
+      </p>
+      <p>
+         <label class="Colocar_email"><b>Correo electronico:</b></label>
+         <input type="email" required="obligatorio" placeholder="Escribe tu @"></input>
+      </p>
+       <p>
+        <label class="colocar_telefono"><b>Telefono:</b></label>
+        <input type="text" required="obligatorio" placeholder="Escribe tu numero de telefono"></input>
+      </p>
+       <p>
+        <label class="colocar_direccion"><b>Dirección:</b></label>
+        <input type="text" required="obligatorio" placeholder="Escribe tu dirección"></input>
+      </p>
+    </br>
+        <h3>¿Desea contratar el desayuno del mismo hotel?</h3>
+        <select name="Preferencia" id="Preferencia">
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+        </select>
+        <h3>¿Desea contratar alguna otra comida que no se el desayuno?</h3>
+        <select name="Preferencia" id="Preferencia">
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+        </select>
+        <p>
+        <label class="Colocar_mensaje"><b>Numeros de habitaciones a reservar (60 euros por habitación):</b>
+        <textarea class="Colocar_mensaje" placeholder="Introduce el numero de camas requeridas para la habitacion/es"></textarea>
+        </p>
+         <h3>Mes en el que se irá de vacaciones</h3>
+          <input type="date" required="obligatorio" name="date_control"/>
+      </br>
+      <p>
+        <label class="Colocar_mensaje"><b>Comentarios adicionales que desee dejar:</b>
+        <textarea class="texto_mensaje" placeholder="Introduce tu mensaje"></textarea>
+      </p>
+      <button type="submit">Enviar</button>
+    
+</body>  
+</html>
